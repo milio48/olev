@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>OLEV TRANSLATOR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+<div class="w3-container w3-center">
+
+
+<div class="w3-card-4">
+  <div class="w3-container w3-indigo">
+    <h2>From OLEV</h2>
+  </div>
+    <p>      
+    <label class="w3-text-indigo"><b>Bahasa planet Olev</b></label>
+    <textarea class="w3-input w3-border" style="resize:none" id="fromolev"></textarea>
+    <button class="w3-btn w3-indigo" onclick="olevkan()">terjemahkan</button></p>
+    <p>      
+    <textarea class="w3-input w3-border" style="resize:none" id="resultfromolev"></textarea>    <p>
+</div>
+
+<br>
+<div class="w3-card-4">
+  <div class="w3-container w3-deep-orange">
+    <h2>To Olev</h2>
+  </div>
+    <p>      
+    <label class="w3-text-deep-orange"><b>Bahasa manusia</b></label>
+    <textarea class="w3-input w3-border" style="resize:none" id="toolev"></textarea>
+    <button class="w3-btn w3-deep-orange" onclick="olevkan2()">terjemahkan</button></p>
+    <p>      
+    <textarea class="w3-input w3-border" style="resize:none" id="resulttoolev"></textarea>    <p>
+</div>
+
+</div>
+
+<script>
+function olevkan(){
+        var raw = document.getElementById("fromolev").value;
+
+        var data = raw.toLowerCase();
+
+        var data = data.replace(/a/g,  "Z");
+		var data = data.replace(/b/g,  "Y");
+		var data = data.replace(/c/g,  "X");
+		var data = data.replace(/d/g,  "W");
+		var data = data.replace(/e/g,  "V");
+		var data = data.replace(/f/g,  "U");
+		var data = data.replace(/g/g,  "T");
+		var data = data.replace(/h/g,  "S");
+		var data = data.replace(/i/g,  "R");
+		var data = data.replace(/j/g,  "Q");
+		var data = data.replace(/k/g,  "P");
+		var data = data.replace(/l/g,  "O");
+		var data = data.replace(/m/g,  "N");
+		var data = data.replace(/n/g,  "M");
+		var data = data.replace(/o/g,  "L");
+		var data = data.replace(/p/g,  "K");
+		var data = data.replace(/q/g,  "J");
+		var data = data.replace(/r/g,  "I");
+		var data = data.replace(/s/g,  "H");
+		var data = data.replace(/t/g,  "G");
+		var data = data.replace(/u/g,  "F");
+		var data = data.replace(/v/g,  "E");
+		var data = data.replace(/w/g,  "D");
+		var data = data.replace(/x/g,  "C");
+		var data = data.replace(/y/g,  "B");
+		var data = data.replace(/z/g,  "A");
+		
+        
+        document.getElementById("resultfromolev").value = data;
+    }
+	
+	
+	function olevkan2(){
+        var raw = document.getElementById("toolev").value;
+
+        var data = raw.toLowerCase();
+
+        var data = data.replace(/a/g,  "Z");
+		var data = data.replace(/b/g,  "Y");
+		var data = data.replace(/c/g,  "X");
+		var data = data.replace(/d/g,  "W");
+		var data = data.replace(/e/g,  "V");
+		var data = data.replace(/f/g,  "U");
+		var data = data.replace(/g/g,  "T");
+		var data = data.replace(/h/g,  "S");
+		var data = data.replace(/i/g,  "R");
+		var data = data.replace(/j/g,  "Q");
+		var data = data.replace(/k/g,  "P");
+		var data = data.replace(/l/g,  "O");
+		var data = data.replace(/m/g,  "N");
+		var data = data.replace(/n/g,  "M");
+		var data = data.replace(/o/g,  "L");
+		var data = data.replace(/p/g,  "K");
+		var data = data.replace(/q/g,  "J");
+		var data = data.replace(/r/g,  "I");
+		var data = data.replace(/s/g,  "H");
+		var data = data.replace(/t/g,  "G");
+		var data = data.replace(/u/g,  "F");
+		var data = data.replace(/v/g,  "E");
+		var data = data.replace(/w/g,  "D");
+		var data = data.replace(/x/g,  "C");
+		var data = data.replace(/y/g,  "B");
+		var data = data.replace(/z/g,  "A");
+		
+        
+        document.getElementById("resulttoolev").value = data;
+    }
+</script>
+</body>
+</html> 
